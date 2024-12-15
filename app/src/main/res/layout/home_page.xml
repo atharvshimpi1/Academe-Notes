@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background">
+
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <!-- ImageView for Card 1 -->
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/one" />
+
+                    <!-- TextView for Card 1 -->
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/image1"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@id/image1"
+                        android:text="@string/year"
+                        android:layout_marginTop="25dp"
+                        android:textSize="25sp" />
+
+                    <!-- Button for Card 1 -->
+                    <Button
+                        android:id="@+id/b1"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/my_button_color"
+                        android:text="@string/bGo" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card1"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <!-- ImageView for Card 2 -->
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/two" />
+
+                    <!-- TextView for Card 2 -->
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/image2"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@id/image2"
+                        android:text="@string/year"
+                        android:layout_marginTop="25dp"
+                        android:textSize="25sp" />
+
+                    <!-- Button for Card 2 -->
+                    <Button
+                        android:id="@+id/b2"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/my_button_color"
+                        android:text="@string/bGo" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card2"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <!-- ImageView for Card 3 -->
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/three" />
+
+                    <!-- TextView for Card 3 -->
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/image3"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@id/image3"
+                        android:text="@string/year"
+                        android:layout_marginTop="25dp"
+                        android:textSize="25sp" />
+
+                    <!-- Button for Card 3 -->
+                    <Button
+                        android:id="@+id/b3"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/my_button_color"
+                        android:text="@string/bGo" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card3"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <!-- ImageView for Card 4 -->
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/four" />
+
+                    <!-- TextView for Card 4 -->
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/image4"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toEndOf="@id/image4"
+                        android:text="@string/year"
+                        android:layout_marginTop="25dp"
+                        android:textSize="25sp" />
+
+                    <!-- Button for Card 4 -->
+                    <Button
+                        android:id="@+id/b4"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/my_button_color"
+                        android:text="@string/bGo" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bottom_background"
+                android:elevation="2dp"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@drawable/item_selector"
+                app:itemRippleColor="@android:color/transparent"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_menu" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "630261019517",
+    "project_id": "collabrative-notes",
+    "storage_bucket": "collabrative-notes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630261019517:android:c20559e2c098e5e5789214",
+        "android_client_info": {
+          "package_name": "com.example.collabrativenotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1cjQDsoWDbSDsuRb-nNdsTsFnLvf-jig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
